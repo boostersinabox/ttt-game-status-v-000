@@ -60,7 +60,7 @@ end
 
 # winner? method
 def winner?(board)
-  if won?(board)
+  if won?(board) = 
     return board[winning_combo.first]
   end
 end
