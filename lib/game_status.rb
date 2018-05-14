@@ -58,8 +58,8 @@ def over?(board)
   full?(board) || won?(board)
 end
 
-# winner? method
-def winner?(board)
+# winner method
+def winner(board)
   if winning_combo && board_space == "X"
     puts "X"
     elsif wining_combo && board_space == "O"
