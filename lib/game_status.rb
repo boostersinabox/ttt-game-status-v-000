@@ -60,7 +60,11 @@ end
 
 # winner? method
 def winner?(board)
-  if won?(board) = "X" || "O"
-    return board[winning_combo.first]
+  if won?(board) && board_space == "X"
+    puts "X"
+    elsif won?(board) && board_space == "O"
+    puts "O"
+  else
+    return nil
   end
 end
