@@ -60,9 +60,9 @@ end
 
 # winner? method
 def winner?(board)
-  if won?(board) && board_space == "X"
+  if winning_combo && board_space == "X"
     puts "X"
-    elsif won?(board) && board_space == "O"
+    elsif wining_combo && board_space == "O"
     puts "O"
   else
     return nil
