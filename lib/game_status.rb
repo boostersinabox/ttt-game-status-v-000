@@ -60,8 +60,8 @@ end
 
 # winner method
 def winner(board)
-  if winning_combo = won?(bord)
-    board[winning_combo.first]
+  if winning_combo_indexes = won?(bord)
+    board[winning_combo_indexes.first]
   else
     return nil
   end
