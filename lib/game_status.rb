@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
 
 # won? method 2nd attempt trying to use the helper method
 def won?(board)
-  WIN_COMBINATIONS.detect do |winning_combo|
+  WIN_COMBINATIONS.select do |winning_combo|
     board[winning_combo[0]] == board[winning_combo[1]] &&
     board[winning_combo[1]] == board[winning_combo[2]] &&
     position_taken?(board, winning_combo[0])
