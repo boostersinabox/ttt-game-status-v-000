@@ -60,7 +60,7 @@ end
 
 # winner method
 def winner(board)
-  if the_winner = won?(bord)
+  if the_winner = won?(board)
     board[the_winner.first]
   else
     return nil
